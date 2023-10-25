@@ -212,7 +212,7 @@
 
     .image-project{
     border-radius:3%;
-    margin-left: 20px;
+    margin-left: 10px;
      width: 350px;
     }
 
@@ -233,6 +233,42 @@
             .navbar li {
               margin: 10px 0;
             }
+
+        }
+
+        .forskill {
+          width: 130px;
+          height: 50px;
+          border-color: #5c5d64;
+          color: rgb(16, 16, 16);
+          border-style: solid;
+          border-radius: 12px;
+          padding: 9px 16px;
+          display: flex;
+          justify-content: center;
+          margin: 5px;
+
+        }
+
+        .icons {
+          overflow-clip-margin: content-box;
+          overflow: clip;
+          height: 30px;
+        }
+        .text{
+          margin-top: 5px;
+          margin-left: 5px;
+        }
+
+        .height{
+            height: 265px;
+        }
+
+        .forskill:hover {
+            transform: scale(1.05);
+        }
+        .no-hover{
+            pointer-events: none;
 
         }
 

@@ -51,7 +51,7 @@
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
    <!-- ======= Header ======= -->
-   <header id="header">
+   <!-- <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
@@ -71,13 +71,15 @@
           <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html#project" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Project</span></a></li>
           <li><a href="index.html#certificates" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Certificates</span></a></li>
-          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
           <li><a href="index.html#contacts" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </header> -->
 <!-- End Header -->
+
+<div id="header"></div>
+
 
   <main id="main">
 
@@ -189,6 +191,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Fetch the content from page1.html and include the specific portion in the specified div
+    fetch('index.html')
+        .then(response => response.text())
+        .then(data => {
+            // Create a temporary div to hold the fetched content
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = data;
+
+            // Extract the specific portion using its ID
+            const specificContent = tempDiv.querySelector('#contentToInclude').innerHTML;
+
+            // Insert the specific content into the header element
+            document.getElementById('header').innerHTML = specificContent;
+        })
+        .catch(error => console.error('Error:', error));
+</script>
 
 </body>
 
