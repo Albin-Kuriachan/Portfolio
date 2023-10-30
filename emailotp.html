@@ -50,7 +50,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img  src="myfiles/5.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-img.jpg" src="myfiles/7.jpeg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Albin Kuriachan</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/albin-ak/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -86,11 +86,21 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Albin Kuriachan</h1>
-      <p>I'm <span class="typed" data-typed-items="Python Full-Stack Developer, 
-          Frontend Developer, Backend Developer, Web Developer"></span></p>
+        <h1>Albin Kuriachan</h1>
+        <p>I'm <span class="typed" data-typed-items="Python Full-Stack Developer, Frontend Developer, Backend Developer, Web Developer"></span></p>
     </div>
-  </section><!-- End Hero -->
+</section>
+  <!-- End Hero -->
+
+  <style>
+    /* Add CSS for responsiveness */
+    @media only screen and (max-width: 600px) {
+        /* Modify styles for smaller screens */
+        .hero-container {
+            text-align: center;
+        }
+    }
+</style>
 
 
   <main id="main">
@@ -113,48 +123,30 @@
                   RestApi and Angular I can navigate both the back-end and front-end aspects of web development. I enjoy
                   building user-friendly, robust web solutions and look forward to contributing to innovative projects.
                 </p>
-                <a style="border-radius: 10px;" href="https://drive.google.com/file/d/19-hL0LQtH8fFsn9TjybIvu5WfVWVZsBw/view?usp=drive_link" class="sim-btn btn-hover-new"
+                <a style="border-radius: 10px;" href="myfiles/akr.pdf" class="sim-btn btn-hover-new"
                   data-text="Download Resume" open><span>Download Resume</span></a>
                 <a style="border-radius: 10px;" href="#contacts" class="sim-btn btn-hover-new" data-text="Hire Me"
                   open><span>Hire Me</span></a>
+
+
+
+
               </div><!-- end message box -->
             </div><!-- end col -->
 
-            <!-- to show in Desktop  view. Hidden in mobile  view -->
-            <div class="col-md-6 hideOnMobile">
+            <div class="col-md-6">
               <div class="right-box-pr wow fadeIn">
                 <div class="zoom-image">
-                  <img style="border-radius: 10px;" src="myfiles/7.jpeg" alt="" class="img-fluid img-rounded myimage">
+                  <img style="border-radius: 10px;  width: 450px;margin-top: 30px;margin-left:50px;" src="myfiles/7.jpeg" alt="" class="img-fluid img-rounded">
                 </div>
-              </div>
+              </div><!-- end media -->
             </div>
-            <!-- to show in mobile view. Hidden in  Desktop view -->
-            <div class="col-md-6 no-hover hideOnDesktop" >
-              <div class="right-box-pr wow fadeIn">
-                <div class="zoom-image">
-                  <img style="border-radius: 10px;" src="myfiles/7.jpeg" alt="" class="img-fluid img-rounded ">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+            <!-- end col -->
+          </div><!-- end row -->
+        </div><!-- end container -->
       </div>
       <!-- end section -->
 
-      <style>
-        @media only screen and (max-width: 768px) {
-          .hideOnMobile {
-          display: none;
-          }
-        }
-
-        @media (min-width: 768px) {
-        .hideOnDesktop {
-          display: none; /* Hide the element on computer screens */
-          }
-        }
-        </style>
 
 
       <section id="skill" class="portfolio section-">
@@ -263,8 +255,8 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div>
-              <a href="bigmart.html" title="More Details" style="text-decoration: none;">
-                <img src="myfiles/bigmartpic.jpg" class="img-fluid image-project">
+              <a href="project-details.html" title="More Details" style="text-decoration: none;">
+                <img src="myfiles/bigmartimg.jpg" class="img-fluid image-project">
                 <div class="portfolio-links" style="margin-top:10px;text-align:center">
                   <strong style="color: black; margin-top:10px;">Big Mart - Online Shoping Website</strong>
                 </div>
@@ -275,16 +267,16 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div>
-              <a href="myshow.html" title="More Details" style="text-decoration: none;">
-                <img src="myfiles/myshowcover.jpg" class="img-fluid image-project">
+              <a href="project-details.html" title="More Details" style="text-decoration: none;">
+                <img src="myfiles/move.jpg" class="img-fluid image-project">
                 <div class="portfolio-links" style="margin-top:10px;text-align:center">
-                  <strong style="color: black; margin-top:10px;">My Show - Online Movie Booking Website</strong>
+                  <strong style="color: black; margin-top:10px;">Big Mart - Online Shoping Website</strong>
                 </div>
               </a>
             </div>
           </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+<!-- 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div>
               <a href="project-details.html" title="More Details" style="text-decoration: none;">
                 <img src="myfiles/bigmartimg.jpg" class="img-fluid image-project">
@@ -292,8 +284,8 @@
                   <strong style="color: black; margin-top:10px;">Big Mart - Online Shoping Website</strong>
                 </div>
               </a>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
         </div>
       </section>
 
@@ -369,6 +361,8 @@
       <!-- end title -->
 
 
+
+
       <!-- ======= Contact Section ======= -->
       <section id="contacts" class="contact portfolio section-bg" style="color: rgb(21, 21, 21);">
         <div class="container">
@@ -408,18 +402,55 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="form" class="php-email-form" style="border-radius: 10px; border-color: #000;">
+
+            <form id="formotp"class="php-email-form" style="border-radius: 10px; border-color: #000;">
+
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" id="name" class="form-control" required
-                    style="border-radius: 10px; border-color: #000;">
+                    style="border-radius: 10px; border-color: #000; "  onkeyup="copyText()">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" style="border-radius: 10px; border-color: #000;"
-                    id="email" required>
+              <label for="name">Your Email</label>
+              <input type="text" name="otpemail" id="otpemail" required class="form-control" 
+               style="border-radius: 10px; border-color: #000;"
+                 required onkeyup="copyEmail()">
+                 <input type="hidden" id="otp" name="otp">
                 </div>
+                <div class="form-group col-md-6">
+
+                 <input type="submit" id="buttonotp" value="Send OTP" onclick="sendEmail()"
+                 class="sim-btn btn-hover-new"  style="border-radius: 10px;margin-left: 70px;">
+                  </div>
+                <!-- <div class="form-group col-md-10">           -->
+                 <div class="verification">
+                  <label for="userInput">Enter OTP</label>
+                  <input type="text" id="userInput" class="form-control" required
+                  style="border-radius: 10px; border-color: #000; ">
+                  </div>
+                  <div class="form-group col-md-6">
+
+                  <button onclick="verifyOTP()" class="sim-btn btn-hover-new"
+                  style="border-radius: 10px; margin-top: 30px; margin-left: 80px;">Verify OTP</button>
+                  </div>
+              </div>
+              </form>
+
+            <form id="form" class="php-email-form" style="border-radius: 10px; border-color: #000;margin-left:15px;">
+              <div class="row">
+                <div class="form-group col-md-6" hidden>
+                  <label for="name">hidein Name</label>
+                  <input type="text" name="name" id="input2" class="form-control" required
+                    style="border-radius: 10px; border-color: #000;" value="" >
+                </div>
+                <div class="form-group col-md-6" hidden>
+                  <label for="name">hidein Email</label>
+                  <input type="email" class="form-control" name="email" style="border-radius: 10px; border-color: #000;"
+                    id="email2" required  >
+                </div>
+
+                
               </div>
               <div class="form-group">
                 <label for="name">Subject</label>
@@ -435,13 +466,123 @@
                 <input type="submit" id="button" value="Send Email" class="sim-btn btn-hover-new"
                   style="border-radius: 10px;">
               </div>
-            </form>
+            </form> 
           </div>
 
         </div>
     </div>
     </section>
-    <!-- End Contact Section -->
+    
+    
+
+
+  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="text/javascript">
+      emailjs.init('tHJbbeooOJ2pTjkWt')
+  </script>
+
+  <!-- <script>
+      var countdown = 30;
+
+      function generateotp() {
+          var randomNum = Math.floor(1000 + Math.random() * 9999); // Generates a 4-digit random number
+          document.getElementById("otp").value = randomNum;
+      }
+
+      function sendEmail() {
+          generateotp();
+          const btn = document.getElementById('buttonotp');
+          btn.value = 'Sending...';
+          btn.disabled = true; // Disable the button
+
+          const timer = setInterval(function () {
+              if (countdown <= 0) {
+                  clearInterval(timer);
+                  btn.value = 'Send Email';
+                  btn.disabled = false; // Enable the button after the countdown
+              } else {
+                  btn.value = `Resend (${countdown}s)`;
+                  countdown--;
+              }
+          }, 1000);
+
+          const serviceID = 'default_service';
+          const templateID = 'template_qv7xehp';
+          emailjs.sendForm(serviceID, templateID, document.getElementById('formotp'))
+              .then(() => {
+                  alert('Sent!');
+              })
+              .catch((err) => {
+                  alert(JSON.stringify(err));
+                  btn.value = 'Send Email';
+                  btn.disabled = false; // Enable the button in case of an error
+              });
+      }
+
+      function verifyOTP() {
+          var userInput = document.getElementById("userInput").value;
+          var generatedNumber = document.getElementById("otp").value;
+          if (userInput === generatedNumber) {
+              alert("Verification successful!");
+          } else {
+              alert("Verification failed. Please try again.");
+          }
+      }
+  </script> -->
+  <script>
+    var countdown = 30;
+
+    function generateotp() {
+        var randomNum = Math.floor(1000 + Math.random() * 9999); // Generates a 4-digit random number
+        document.getElementById("otp").value = randomNum;
+    }
+
+    function sendEmail() {
+        generateotp();
+        const btn = document.getElementById('buttonotp');
+        btn.value = 'Sending...';
+        btn.disabled = true; // Disable the button
+
+        const timer = setInterval(function () {
+            if (countdown <= 0) {
+                clearInterval(timer);
+                btn.value = 'Send Email';
+                btn.disabled = false; // Enable the button after the countdown
+            } else {
+                btn.value = `Resend (${countdown}s)`;
+                countdown--;
+            }
+        }, 1000);
+
+        const serviceID = 'default_service';
+        const templateID = 'template_qv7xehp';
+        emailjs.sendForm(serviceID, templateID, document.getElementById('formotp'))
+            .then(() => {
+                Swal.fire('Sent!', 'OTP has been sent successfully!', 'success');
+            })
+            .catch((err) => {
+                Swal.fire('Error!', JSON.stringify(err), 'error');
+                btn.value = 'Send Email';
+                btn.disabled = false; // Enable the button in case of an error
+            });
+    }
+
+    function verifyOTP() {
+        var userInput = document.getElementById("userInput").value;
+        var generatedNumber = document.getElementById("otp").value;
+        if (userInput === generatedNumber) {
+            Swal.fire('Success!', 'Verification successful!', 'success');
+        } else {
+            Swal.fire('Error!', 'Verification failed. Please try again.', 'error');
+        }
+    }
+</script>
+
+  
 
     <footer>
       <div class="container">
@@ -472,5 +613,17 @@
   <script type="text/javascript">emailjs.init('tHJbbeooOJ2pTjkWt')</script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
+
+
+<script>
+  function copyText() {
+      var input1Value = document.getElementById('name').value;
+      document.getElementById('input2').value = input1Value;
+  }
+          function copyEmail() {
+      var input1Value = document.getElementById('otpemail').value;
+      document.getElementById('email2').value = input1Value;
+  }
+</script>
 
 </html>
